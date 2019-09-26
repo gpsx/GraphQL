@@ -5,7 +5,8 @@ const usuarios = [{
     idade: 2334,
     salario_real: 6.54,
     vip: true,
-    perfil_id: 1
+    perfil_id: 1,
+    status: 'ATIVO'
 },{
     id : 2,
     nome: "ff hitalar",
@@ -13,7 +14,8 @@ const usuarios = [{
     idade: 2334,
     salario_real: 4.54,
     vip: true,
-    perfil_id: 1
+    perfil_id: 1,
+    status: 'ATIVO'
 },{
     id : 3,
     nome: "sa hitalar",
@@ -21,7 +23,8 @@ const usuarios = [{
     idade: 2334,
     salario_real: 1.54,
     vip: true,
-    perfil_id: 2
+    perfil_id: 2,
+    status: 'ATIVO'
 }]
 
 const perfils = [{

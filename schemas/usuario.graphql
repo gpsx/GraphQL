@@ -1,11 +1,18 @@
+enum UsuarioStatus{
+    ATIVO
+    MORTO
+    DESATIVO
+}
+
 type Usuario {
-    id : Int!
-    nome : String!
+    id: Int!
+    nome: String!
     email: String!
-    idade : Int
-    salario : Float
-    vip : Boolean
+    idade: Int
+    salario: Float
+    vip: Boolean
     perfil: Perfil
+    status: UsuarioStatus
 }
 
 type Perfil {
