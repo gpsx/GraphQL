@@ -1,4 +1,4 @@
-const { usuarios, perfils } = require('../../data/db')
+const { usuarios } = require('../../data/db')
 
 module.exports = {
     usuarioLogado() {
