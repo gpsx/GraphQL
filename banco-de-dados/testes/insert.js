@@ -1,7 +1,7 @@
 const db = require('../config/db')
 
 const novoPerfil = {
-    nome: 'CORNO',
+    nome: 'CORNO'+Math.random(),
     rotulo: 'corno'
 }
 
