@@ -4,6 +4,9 @@ module.exports = {
     async usuarios() {
        return db('usuarios')
     },
+    async users(){
+        return db('PLAYER').where({ PLAYER_VISIBILITY_PERMISSION: "PRIVATE"})
+    },
     async usuario(_, { filtro }) {
         if (!filtro) return null 
         const { id, email } = filtro
