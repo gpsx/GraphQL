@@ -17,6 +17,17 @@ module.exports = {
         db('perfis')
     },
     async alterarPerfil(_, { filtro, dados }) {
-        // implementar
+        if(!filtro || !dados) return null
+        const { id, nome } = filtro
+        if (id) {
+            await db('perfis').where({ id }).update({ ...dados })
+            return db('perfis').where({ id }).first()
+        }else if (nome) {
+            await db('perfis').where({ nome }).update({ ...dados })
+            return db('perfis').where({ nome: dados.nome }).first()
+             
+        }else{
+            throw new Error('Erro!')
+        }
     }
 }

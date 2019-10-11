@@ -17,6 +17,20 @@ type APPS {
     APP_PRICE: String
 }
 
+type Player{
+    PLAYER_ID: String
+    PLAYER_NICKNAME: String
+    PLAYER_PROFILE_URL: String
+    PLAYER_AVATAR: String
+    PLAYER_PERSONA_STATE: String
+    PLAYER_VISIBILITY_PERMISSION: String
+    PLAYER_LAST_LOGOFF: String
+    PLAYER_COMMENT_PERMISSON: String
+    PLAYER_NAME: String
+    PLAYER_CREATION_DATA: String
+    PLAYER_CURRENT_GAME_ID: String
+}
+
 input UsuarioInput {
     nome: String
     email: String
