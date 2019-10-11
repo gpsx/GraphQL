@@ -4,6 +4,18 @@ type Usuario {
     email: String!
     perfis: [Perfil]
 }
+type APPS {
+    APP_ID: String
+    APP_NAME: String
+    APP_TYPE: String
+    APP_REQUIRED: String
+    APP_MAIN_GAME: String
+    APP_GENRES: String
+    APP_IS_FREE: String
+    APP_IS_MULTIPLAYER: Int
+    APP_IS_SINGLEPLAYER: Int
+    APP_PRICE: String
+}
 
 input UsuarioInput {
     nome: String

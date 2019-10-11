@@ -4,6 +4,9 @@ module.exports = {
     async usuarios() {
        return db('usuarios')
     },
+    async games(){
+        return db('APPS').where({APP_IS_FREE: 1})
+    },
     async usuario(_, { filtro }) {
         if (!filtro) return null 
         const { id, email } = filtro

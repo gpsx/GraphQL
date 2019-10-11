@@ -7,14 +7,14 @@ module.exports = {
             return db('perfis').where({ id }).first()
         } catch{
             (e)=>{
-                console.log(e);
-                
+                console.log(e); 
                 throw new Error("Algo de errado não está certo!"+e);
             }   
         }
     },
     async excluirPerfil(_, { filtro }) {
-        // implementar
+        const { id, nome } = filtro
+        db('perfis')
     },
     async alterarPerfil(_, { filtro, dados }) {
         // implementar

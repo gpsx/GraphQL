@@ -1,6 +1,7 @@
 # Pontos de entrada da sua API!
 type Query {
     usuarios: [Usuario]
+    games: [APPS]
     usuario(filtro: UsuarioFiltro!): Usuario
     perfis: [Perfil]
     perfil(filtro: PerfilFiltro!): Perfil
